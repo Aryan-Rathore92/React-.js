@@ -8,6 +8,7 @@ function App() {
     npm ---> node packeg maneger
     npx ---> node packeg exicuter
     Use keyword [dir] for check the packeg of json
+                [cd ..]{this is use for outer to one folder}
     Command-- > [npm run start(for exicution without vite)]
                 [npm run build(for create a build folder)]
 
