@@ -1,9 +1,16 @@
-import Chai from './chai.jsx'
+
+import Chai from "./Chai.jsx"
 
 function App() {
   
+
   return (
-    <Chai/>
+
+  <>
+  <Chai/>
+  <h1>My name is aryan</h1>
+  <p>hello</p>
+</>
   )
 }
 

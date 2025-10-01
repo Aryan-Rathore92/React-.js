@@ -1,7 +1,7 @@
 function Chai(){
-      return(
-        <h3>Chai is ready</h3>
-      )
+    return(
+        <h2>Chai is ready</h2>
+    )
 }
 
-export default Chai;
+export default Chai
