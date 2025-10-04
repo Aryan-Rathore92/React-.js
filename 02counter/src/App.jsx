@@ -13,10 +13,13 @@ function App() {
   const addValue = () => {
       //  console.log("value added", counter);
       //  counter = counter + 1
-      if (counter < 20) {
-        setcounter(counter + 1)
-      }
-        // setcounter(counter)
+      // if (counter < 20) {
+      //   setcounter(counter + 1)
+      // }
+      setcounter((prevCounter) => prevCounter + 1)
+      setcounter((prevCounter) =>  prevCounter + 1)
+      setcounter((prevCounter) => prevCounter + 1) // Interview question related to function propagation
+      setcounter((prevCounter) => prevCounter + 1)
   }
 
   const removeValue = () => {
