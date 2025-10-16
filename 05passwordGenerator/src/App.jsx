@@ -46,12 +46,14 @@ function App() {
 
           <div className='flex text-sm gap-x-2'></div>
           <div className='flex items-center gap-x-1 '>
-            <input 
+            <input
+            className="accent-blue-700"
+            color='blue'
             type="range" 
             min={6}
             max={100}
             value={length}
-            className='cursor-pointer'
+            // className='cursor-pointer'
             onChange={(e) => {setLength(e.target.value)}}
             />
             <label>Length : {length}</label>
@@ -59,6 +61,7 @@ function App() {
 
           <div className='flex items-center gap-x-1'>
             <input 
+            className="accent-blue-700"
             type="checkbox" 
             defaultChecked = {numberAllowed}
             id='numberInput'
@@ -71,6 +74,7 @@ function App() {
 
           <div className='flex items-center gap-x-1'>
             <input 
+            className="accent-blue-700"
             type="checkbox" 
             defaultChecked = {charAllowed}
             id='characterInput'
