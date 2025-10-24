@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link, NavLink} from 'react-router-dom' /* We don't use of Link because it is relate to ancure(a) tag and a tag does full page reload */
-
+                                               /* But I prefer use Link comapre than anchor(a) tag*/ 
 
 export default function Header() {
     return (
@@ -39,8 +39,10 @@ export default function Header() {
                         <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
                             <li>
                                 <NavLink
-                                    className={() =>
-                                        `block py-2 pr-4 pl-3 duration-200 border-b border-gray-100
+                                    className={({isActive}) =>
+                                        `block py-2 pr-4 pl-3 duration-200
+                                         ${isActive ? "text-orange-700" : "text-gray-700"}
+                                         border-b border-gray-100
                                          hover:bg-gray-50 lg:hover:bg-transparent lg:border-0
                                           hover:text-orange-700 lg:p-0`
                                     }
@@ -56,11 +58,4 @@ export default function Header() {
             </nav>
         </header>
     );
-}
-// function Header() {
-//   return (
-//     <div>Header</div>
-//   )
-// }
-
-// export default Header
+}//
